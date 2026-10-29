@@ -1,0 +1,75 @@
+{
+  "config": {
+    "assets": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "JPM"
+    ],
+    "risk_groups": [
+      "TechnologyAndInternet",
+      "TechnologyAndInternet",
+      "TechnologyAndInternet",
+      "TechnologyAndInternet",
+      "Financials"
+    ],
+    "start_date": "2019-01-01",
+    "end_date": "2026-01-01",
+    "momentum_window": 20,
+    "volatility_window": 20,
+    "factor_names": [
+      "common",
+      "momentum",
+      "volatility"
+    ],
+    "training_window": 252,
+    "covariance_window": 252,
+    "covariance_half_life": 63.0,
+    "specific_half_life": 42.0,
+    "refit_every": 21,
+    "fit_method": "reml",
+    "profile_penalty": 0.1,
+    "parameter_bound": 1.0,
+    "variance_floor": 1e-06,
+    "variance_ceiling": 0.01,
+    "leverage_floor": 0.05,
+    "covariance_shrinkage": 0.15,
+    "factor_directions": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "target_volatility": 0.1,
+    "gross_limit": 1.0,
+    "max_position": 0.4,
+    "transaction_cost_bps": 10.0,
+    "borrow_rate": 0.03,
+    "trading_days": 252,
+    "rebalance_every": 5,
+    "initial_capital": 100000.0,
+    "liquidate_at_end": false
+  },
+  "recorded_data": {
+    "source": "Yahoo Finance via yfinance",
+    "download_date_utc": "2026-10-29",
+    "first_trading_date": "2019-01-02",
+    "last_trading_date": "2025-12-31",
+    "price_rows": 1760,
+    "raw_snapshot_committed": false,
+    "vendor_revisions_can_change_results": true
+  },
+  "specific_risk_estimator": "bounded penalized profile REML",
+  "risk_group_definition": "Two static analyst-defined industry proxies; not historical official classifications.",
+  "execution": "Signal after close s; trade at close s+1; earn returns from s+1 to s+2.",
+  "risk_forecast_timing": "Risk estimates refer to the signal-date next-close interval; live execution adds one trading-day delay.",
+  "cash_rate": 0.0,
+  "limitations": [
+    "Five currently surviving stocks; not a historical all-stock universe.",
+    "Three factors leave two residual degrees of freedom per cross-section.",
+    "Regularization, bounds, variance floors, and noise correction are implementation choices.",
+    "Adjusted close execution is an approximation; fees and borrow availability are simplified.",
+    "The momentum direction is fixed in advance; no return-maximizing parameter search is performed.",
+    "Vendor-adjusted history is not a strict point-in-time data archive."
+  ]
+}

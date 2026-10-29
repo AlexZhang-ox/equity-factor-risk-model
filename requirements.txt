@@ -1,0 +1,7 @@
+# Core versions validated locally with Python 3.12 and Python 3.13.
+# For notebook execution, install requirements-notebook.txt instead.
+numpy==2.3.5
+pandas==2.2.3
+yfinance==1.7.0
+scipy==1.18.1
+matplotlib==3.11.2

@@ -1,0 +1,39 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Downloaded market data and locally generated runs
+/data/*
+!/data/README.md
+/results/
+/results_*/
+/work/
+*.log
+*.zip
+
+# Local credentials and private key material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Superseded local-language working notes
+README_zh.txt

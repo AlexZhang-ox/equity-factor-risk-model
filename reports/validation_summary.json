@@ -1,0 +1,58 @@
+{
+  "source_sha256": "6e5a16c5f6d491bca4b17288bff64b4af028446597e536bd00b7a5a6bf7a33d6",
+  "offline_self_test_groups": 7,
+  "real_data_prefix_checks": [
+    {
+      "model": "ewma",
+      "future_data_prefix_invariance": true,
+      "compared_signal_dates": 736,
+      "cutoff": "2022-12-30",
+      "trade_delay_and_dollar_attribution": true
+    },
+    {
+      "model": "structural",
+      "future_data_prefix_invariance": true,
+      "compared_signal_dates": 736,
+      "cutoff": "2022-12-30",
+      "trade_delay_and_dollar_attribution": true
+    }
+  ],
+  "optional_mle_validation": {
+    "end_to_end_passed": true,
+    "fits": 71,
+    "fits_at_parameter_bounds": 71,
+    "fallbacks": 0
+  },
+  "notebook_outputs_cleared_for_publication": true,
+  "github_actions_status": "Configured; not yet run on GitHub.",
+  "python_versions_locally_checked": [
+    "3.12",
+    "3.13"
+  ],
+  "fresh_download_validation": {
+    "passed": true,
+    "input_price_rows": 1760,
+    "first_trading_date": "2019-01-02",
+    "last_trading_date": "2025-12-31",
+    "no_preexisting_price_cache": true
+  },
+  "publication_checks": {
+    "all_text_files_ascii_only": true,
+    "notebook_outputs_cleared": true,
+    "notebook_definitions_match_script": true,
+    "relative_document_links_resolve": true,
+    "local_paths_absent": true,
+    "gitignore_exclusions_verified": [
+      ".venv/probe.txt",
+      ".vscode/settings.json",
+      "data/yahoo_adjusted_close.csv",
+      "data/yahoo_download_metadata.json",
+      "results/local.csv",
+      ".env",
+      "__pycache__/probe.pyc",
+      "README_zh.txt"
+    ],
+    "public_file_count": 17,
+    "remote_actions_performed": false
+  }
+}
